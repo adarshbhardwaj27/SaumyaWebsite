@@ -584,6 +584,7 @@
   <script>
     let form = document.getElementById('formdata');
     form.addEventListener('submit', (e) => {
+      alert("MEssage sent successfully")
       e.preventDefault();;
       let data = new FormData(form);
       fetch(
@@ -592,7 +593,6 @@
             body: data
           })
         .then(res => res.text())
-        .then(message => alert("MEssage sent!"))
     })
   </script>
 
