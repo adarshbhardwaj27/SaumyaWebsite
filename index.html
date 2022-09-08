@@ -29,6 +29,20 @@
     h1 {
       font-size: clamp(3rem, 20vw, 10rem) !important;
     }
+
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+      }
+
+      100% {
+        opacity: 1;
+      }
+    }
+
+    .logos {
+      animation: fadeIn 3s;
+    }
   </style>
 </head>
 
@@ -60,14 +74,7 @@
           <li><a href="#section-blog" class="nav-link">Blog</a></li>
           <li><a href="#section-contact" class="nav-link">Contact</a></li>
         </ul>
-        <ul class="social js-clone-nav">
-          <li>
-            <a href="https://www.youtube.com/c/SaumyaPandey" target="_blank"><span class="icon-youtube"></span></a>
-          </li>
-          <li>
-            <a href="https://www.instagram.com/saumyapande_/" target="_blank"><span class="icon-instagram"></span></a>
-          </li>
-        </ul>
+
       </div>
     </header>
 
@@ -87,6 +94,12 @@
               Biotech student👩‍🎓<br>
               Krishna Devotee💝
             </p>
+            <div class="logos" style="margin-bottom: 1rem;">
+              <a href="https://www.youtube.com/c/SaumyaPandey" target="_blank"><span class="icon-youtube" style="padding-right: 10px;color: white;
+                  font-size: 1.2rem;"></span></a>
+              <a href="https://www.instagram.com/saumyapande_/" target="_blank"><span class="icon-instagram" style="padding-right: 10px;color: white;
+                font-size: 1.2rem;"></span></a>
+            </div>
             <p><img src="images/arrow.png" alt="" style="height: 2em;
               filter: grayscale(1) invert(1);"></p>
 
